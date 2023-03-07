@@ -73,6 +73,7 @@ for library in get_libraries():
 
 while True:
     try:
+        get_libraries()
         library_id = input("\nPlease enter Library number: ")
         for book in get_catalog(library_id):
             print(f"Book Cat.No:-> {book[0]}) Title: {book[1]}")
